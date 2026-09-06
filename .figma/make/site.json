@@ -1,0 +1,11 @@
+{
+  "title": "CanteenGo Mayoga",
+  "description": "Streamline school canteen pre-orders for high school students, enabling quick browsing, ordering, and pickup while helping vendors manage orders efficiently.",
+  "robots": {
+    "index": false
+  },
+  "accessibility": {
+    "addBypassLinks": false,
+    "ignoreReducedMotion": false
+  }
+}

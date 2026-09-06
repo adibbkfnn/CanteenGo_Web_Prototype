@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+@import 'tailwindcss';
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+@theme {
+  --color-brand: #27ae60;
+  --color-brand-dark: #1e8a4c;
+  --color-brand-mid: #2ecc71;
+  --color-brand-light: #e8f8ee;
+  --color-brand-pale: #f0faf5;
+  --color-accent: #f59e0b;
+  --color-accent-light: #fef3c7;
+  --color-surface: #f5faf7;
+  --color-card: #ffffff;
+  --color-text-base: #1a2b22;
+  --color-text-muted: #5c7266;
+  --color-border-soft: #d1e8d9;
+  --color-danger: #ef4444;
+  --color-danger-light: #fee2e2;
+  --color-warning: #f59e0b;
+  --color-warning-light: #fef3c7;
+  --color-info: #3b82f6;
+  --color-info-light: #eff6ff;
+
+  --font-brand: 'Poppins', system-ui, sans-serif;
+  --font-body: 'Inter', system-ui, sans-serif;
+
+  --radius-card: 16px;
+  --radius-btn: 12px;
+  --radius-full: 9999px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', system-ui, sans-serif;
+  background-color: #f5faf7;
+  color: #1a2b22;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Poppins', system-ui, sans-serif;
+}
+
+.font-brand {
+  font-family: 'Poppins', system-ui, sans-serif;
+}
+
+/* Smooth transitions */
+.transition-all {
+  transition: all 0.2s ease;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #c8e6d0;
+  border-radius: 2px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #a8d8b4;
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.hide-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Card shadow */
+.card-shadow {
+  box-shadow: 0 2px 12px 0 rgba(39, 174, 96, 0.08), 0 1px 4px 0 rgba(0, 0, 0, 0.04);
+}
+
+.card-shadow-hover {
+  box-shadow: 0 4px 20px 0 rgba(39, 174, 96, 0.14), 0 2px 8px 0 rgba(0, 0, 0, 0.06);
+}
+
+/* Input focus */
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+  border-color: #27ae60;
+  box-shadow: 0 0 0 3px rgba(39, 174, 96, 0.12);
+}
+
+/* Bottom nav safe area */
+.bottom-nav-safe {
+  padding-bottom: env(safe-area-inset-bottom, 0px);
+}
+
+/* QR Code pattern */
+.qr-module {
+  width: 8px;
+  height: 8px;
+  background: #1a2b22;
+}
